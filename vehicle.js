@@ -9,8 +9,21 @@ class Vehicle {
         this.mileage = mileage;
         this.started = false;
         this.numberOfWheels = 0;
+        this.maximumPassengers = 5;
+        this.maximumSpeed = 160;
+        this.fuel = 10;
+        this.scheduleService = false;
     }
 
+    //loadPassenger(num) no logic given//
+    //start(no parameters) start already in given code//
+    
+    scheduleService() {
+        if (this.mileage > 30000) {            
+            this.scheduleService = true
+            return this.scheduleService;                       
+        }
+    }
     start() {
         if (this.fuel > 0) {
             return this.started = true;
