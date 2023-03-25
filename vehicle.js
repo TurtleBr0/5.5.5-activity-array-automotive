@@ -1,5 +1,6 @@
 class Vehicle {
     constructor(make, model, year, color, mileage) {
+        super(make, model, year, color, mileage);
         this.make = make;
         this.model = model;
         this.year = year;
